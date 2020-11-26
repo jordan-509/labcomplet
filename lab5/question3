@@ -1,0 +1,36 @@
+#!/bin/bash
+
+
+echo " choisisais le repectoire à partir de bureau  "
+read repertoire 
+
+
+
+
+if [ -s $repertoire ]
+then 
+	cd  $repertoire
+
+	liste_fichiers=`ls`
+else
+	echo "error ce n'est pas un repertoire"
+	liste_fichiers=89
+fi 
+ 
+	for fichier in $liste_fichiers
+	do
+ 
+		if [ -d  $fichier  ]
+			then  
+   				  echo "dossier trouvé : $fichier"
+                elif [ $fichier=89 ]
+	 		then 
+				  echo  "t'es malin" 
+
+		else
+		       			echo" "
+		fi
+
+
+done
+

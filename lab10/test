@@ -1,0 +1,19 @@
+
+cible: prerequis prerequis 
+
+install: max1.c min1.c var.c testf.c
+        mv -f testf.c max1.c min1.c var.c $(HOME)/
+
+	
+max1.o: max1.c  
+	gcc -Wall  -c max1.c  	
+
+min.o: min1.c  
+	gcc -Wall -c min1.c    
+
+var.o: var.c
+        gcc -Wall -c var.c
+
+testf.o: testf.c
+	gcc -Wall -c testf.c min1.c max1.c var.c 
+

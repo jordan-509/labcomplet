@@ -1,0 +1,34 @@
+Question 1) commande Env 
+
+Question 2) echo $PATH 
+
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt*
+
+lorsque vous taper , le systeme la cherche dans les dossier spécifiés par la variable path dans l'odre indiqué ;
+
+question 3) ps -ux affiche tous les processus appartenant à l'utilisateur 
+            ps -aux affiche tous les processus existant 
+	 ( le bash à été creé puis envoyé dans /opt ) 
+
+
+
+question 4 )
+
+export Path = &PATH :/opt 
+on rajoute opt a path 
+
+sudo mv nomfichier /opt (sudo car c'est un ficheir protégé )
+
+
+question 5 ) la commande pour que se sois exécutable partout est PATH =&PATH :/opt 
+
+question 6 ) on peut utiliser la commande juste avec son nom de partout voila l'interet 
+
+
+question 7) vim .bashrc fichier script qui s'exécute automatiquement 
+
+	on rajoute à la fin PATH =&PATH:/opt
+
+question 8) apres ca on peut lancer notre fichier partout 
+
+
